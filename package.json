@@ -1,32 +1,24 @@
-
-npm install twitter
-
-var Twitter = require('twitter');
- 
-
- 
-var params = {screen_name: 'MMLiri18'
-};
-client.get('statuses/user_timeline', params, function(error, tweets, response) {
-  if (!error) {
-    console.log(tweets);
-    }
-});
-
-var Spotify = require('node-spotify-api');
- 
-
- 
-spotify.search({ type: 'track', query: 'All the Small Things'
-}, function(err, data) {
-  if (err) {
-    return console.log('Error occurred: ' + err);
-    }
- 
-console.log(data);
-});
-
-
-
-
-
+{
+  "name": "LIRIBot",
+  "version": "1.0.0",
+  "description": "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewmarshdev/LIRIBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewmarshdev/LIRIBot/issues"
+  },
+  "homepage": "https://github.com/matthewmarshdev/LIRIBot#readme",
+  "dependencies": {
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
+  }
+}
